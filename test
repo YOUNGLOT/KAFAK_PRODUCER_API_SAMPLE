@@ -1,0 +1,33 @@
+김영훈
+    - KAFKA 아키텍쳐 학습 (http://wiki.redwoodk.com/ko/%EC%97%85%EB%AC%B4%EC%9D%BC%EC%A7%80/%EA%B9%80%EC%98%81%ED%9B%88/Kafka/Kafka%EC%95%84%ED%82%A4%ED%85%8D%EC%B3%90%ED%95%99%EC%8A%B5)
+        > 카프카의 특징
+        > 카프카의 구성 요소
+            - Topic, PARTITION
+            - Producer, Consumer
+            - Consumer Group
+            - Broker, Zookeeper
+            - Replication
+
+    - KAFKA 디자인 학습(http://wiki.redwoodk.com/ko/%EC%97%85%EB%AC%B4%EC%9D%BC%EC%A7%80/%EA%B9%80%EC%98%81%ED%9B%88/Kafka/Kafka%EB%94%94%EC%9E%90%EC%9D%B8%ED%95%99%EC%8A%B5)
+        > 구성 요소 간 관계도 그려보기
+        1, 카프카 디자인 특징
+        2, 카프카 데이터 모델
+        3, 카프카의 고가용성과 리플리케이션 팩터
+
+    - KAFKA 로컬 설치 (http://wiki.redwoodk.com/ko/%EC%97%85%EB%AC%B4%EC%9D%BC%EC%A7%80/%EA%B9%80%EC%98%81%ED%9B%88/Kafka/Kafka%EC%84%A4%EC%B9%981)
+        > Oracle Virtual Box 로 Cluster 구성 (총 3대)
+        > Zookeeper & Kafka 설치
+        > CLI (Command Line Interface) 명령어 실행 & 정상작동 확인
+            - Topic Create
+            - Topic List
+            - Topic Delete
+            - Topic Describe
+            - Topic Producer
+            - Topic Consumer
+
+    - KAFKA Producer API Sample 개발 (http://wiki.redwoodk.com/ko/%EC%97%85%EB%AC%B4%EC%9D%BC%EC%A7%80/%EA%B9%80%EC%98%81%ED%9B%88/Kafka/KafkaProducerApi)
+        > 실시간 데이터 (log) -> 를 원격으로 produce
+        > API Sample input (ftp 접속 정보), (log File 경로)
+            - ftp 연결 후 Steam 을 활용하여 실시간 log 가져 온 후, produce
+        > CLI Topic Consumer 로 실시간 log 확인인
+    - KAFKA Consumer 학습
