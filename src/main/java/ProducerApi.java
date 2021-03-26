@@ -14,17 +14,19 @@ import java.io.InputStream;
 
 public class ProducerApi {
 
-    private static final String REMOTE_HOST = "113.198.103.137";
-    private static final String USERNAME = "hydrak";
-    private static final String PASSWORD = "fpemdnemzpdl123$";
-    private static final int REMOTE_PORT = 10022;
+    private static final RwkProerties RWKPROPERTIES = new RwkProerties();
+
+    private static final String REMOTE_HOST = RWKPROPERTIES.getREMOTE_HOST();
+    private static final String USERNAME = RWKPROPERTIES.getUSERNAME();
+    private static final String PASSWORD = RWKPROPERTIES.getPASSWORD();
+    private static final int REMOTE_PORT = RWKPROPERTIES.getREMOTE_PORT();
     private static final int SESSION_TIMEOUT = 100000;
     private static final int CHANNEL_TIMEOUT = 100000;
 
-    private static final String KAFKA_SERVER = "yh01:9092";
-    private static final String TOPIC_NAME = "iu01";
+    private static final String KAFKA_SERVER = RWKPROPERTIES.getKAFKA_SERVER();
+    private static final String TOPIC_NAME = RWKPROPERTIES.getTOPIC_NAME();
 
-    private static final String COMMAND = "tail -f /work/logs/modules/web/hydrak.log";
+    private static final String COMMAND = RWKPROPERTIES.getCOMMAND();
 
     public static void main(String[] args) {
 
